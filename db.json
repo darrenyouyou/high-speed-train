@@ -1,0 +1,139 @@
+{
+  "post": {
+    "id": 1,
+    "data": [
+      {
+        "RouteUID": "TPE15111",
+        "RouteID": "15111",
+        "RouteName": {
+          "Zh_tw": "202",
+          "En": "202"
+        },
+        "Operators": [
+          {
+            "OperatorID": "5100",
+            "OperatorName": {
+              "Zh_tw": "指南客運",
+              "En": "Zhinan Bus Co., Ltd."
+            },
+            "OperatorCode": "ZhinanBus",
+            "OperatorNo": "0907"
+          }
+        ],
+        "SubRouteUID": "TPE15111",
+        "SubRouteID": "15111",
+        "SubRouteName": {
+          "Zh_tw": "202",
+          "En": "202"
+        },
+        "Direction": 0,
+        "City": "Taipei",
+        "CityCode": "TPE",
+        "Stops": [
+          {
+            "StopUID": "TPE143294",
+            "StopID": "143294",
+            "StopName": {
+              "Zh_tw": "及人中學",
+              "En": "Chi Jen High School"
+            },
+            "StopBoarding": 0,
+            "StopSequence": 1,
+            "StopPosition": {
+              "PositionLon": 121.518062,
+              "PositionLat": 24.967108,
+              "GeoHash": "wsqqj1ngb"
+            },
+            "StationID": "1000504",
+            "LocationCityCode": "NWT"
+          },
+          {
+            "StopUID": "TPE143295",
+            "StopID": "143295",
+            "StopName": {
+              "Zh_tw": "十四份",
+              "En": "Shisifen"
+            },
+            "StopBoarding": 0,
+            "StopSequence": 2,
+            "StopPosition": {
+              "PositionLon": 121.518795,
+              "PositionLat": 24.969329,
+              "GeoHash": "wsqqj1x2c"
+            },
+            "StationID": "1000505",
+            "LocationCityCode": "NWT"
+          },
+          {
+            "StopUID": "TPE19114",
+            "StopID": "19114",
+            "StopName": {
+              "Zh_tw": "長安林森路口",
+              "En": "Changan and Linsen Intersection"
+            },
+            "StopBoarding": 0,
+            "StopSequence": 37,
+            "StopPosition": {
+              "PositionLon": 121.5224936,
+              "PositionLat": 25.04957589,
+              "GeoHash": "wsqqt21ur"
+            },
+            "StationID": "1284",
+            "LocationCityCode": "TPE"
+          },
+            {
+                "StopUID": "TPE143296",
+                "StopID": "143296",
+                "StopName": {
+                  "Zh_tw": "輕軌陽光運動公園站",
+                  "En": "LRT Sunshine Sports Park Sta."
+                },
+                "StopBoarding": 0,
+                "StopSequence": 4,
+                "StopPosition": {
+                  "PositionLon": 121.519852,
+                  "PositionLat": 24.972839,
+                  "GeoHash": "wsqqj60j3"
+                },
+                "StationID": "1000506",
+                "LocationCityCode": "NWT"
+              },
+              {
+                "StopUID": "TPE143297",
+                "StopID": "143297",
+                "StopName": {
+                  "Zh_tw": "石頭厝",
+                  "En": "Shitoucuo"
+                },
+                "StopBoarding": 0,
+                "StopSequence": 5,
+                "StopPosition": {
+                  "PositionLon": 121.51912,
+                  "PositionLat": 24.974308,
+                  "GeoHash": "wsqqj4rtb"
+                },
+                "StationID": "1000510",
+                "LocationCityCode": "NWT"
+              },
+              {
+                "StopUID": "TPE19091",
+                "StopID": "19091",
+                "StopName": {
+                  "Zh_tw": "景新街",
+                  "En": "Jingxin St."
+                },
+                "StopBoarding": -1,
+                "StopSequence": 11,
+                "StopPosition": {
+                  "PositionLon": 121.512485,
+                  "PositionLat": 24.989999,
+                  "GeoHash": "wsqqjj69q"
+                },
+                "StationID": "9619",
+                "LocationCityCode": "NWT"
+              }
+        ]
+      }
+    ]
+  }
+}

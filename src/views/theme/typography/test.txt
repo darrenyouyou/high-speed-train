@@ -1,0 +1,762 @@
+import React from 'react'
+import { CCard, CCardHeader, CCardBody } from '@coreui/react'
+import { DocsLink } from 'src/components'
+
+const Typography = () => {
+  return (
+    <>
+      <CCard className="mb-4">
+        <CCardHeader>
+          Headings
+          <DocsLink href="https://coreui.io/docs/content/typography/" />
+        </CCardHeader>
+        <CCardBody>
+          <p>
+            Documentation and examples for Bootstrap typography, including global settings,
+            headings, body text, lists, and more.
+          </p>
+          <table className="table">
+            <thead>
+              <tr>
+                <th>Heading</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>
+                    <code className="highlighter-rouge">&lt;h1&gt;&lt;/h1&gt;</code>
+                  </p>
+                </td>
+                <td>
+                  <span className="h1">h1. Bootstrap heading</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <code className="highlighter-rouge">&lt;h2&gt;&lt;/h2&gt;</code>
+                  </p>
+                </td>
+                <td>
+                  <span className="h2">h2. Bootstrap heading</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <code className="highlighter-rouge">&lt;h3&gt;&lt;/h3&gt;</code>
+                  </p>
+                </td>
+                <td>
+                  <span className="h3">h3. Bootstrap heading</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <code className="highlighter-rouge">&lt;h4&gt;&lt;/h4&gt;</code>
+                  </p>
+                </td>
+                <td>
+                  <span className="h4">h4. Bootstrap heading</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <code className="highlighter-rouge">&lt;h5&gt;&lt;/h5&gt;</code>
+                  </p>
+                </td>
+                <td>
+                  <span className="h5">h5. Bootstrap heading</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <code className="highlighter-rouge">&lt;h6&gt;&lt;/h6&gt;</code>
+                  </p>
+                </td>
+                <td>
+                  <span className="h6">h6. Bootstrap heading</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </CCardBody>
+      </CCard>
+      <CCard className="mb-4">
+        <CCardHeader>Headings</CCardHeader>
+        <CCardBody>
+          <p>
+            <code className="highlighter-rouge">.h1</code> through
+            <code className="highlighter-rouge">.h6</code>
+            classes are also available, for when you want to match the font styling of a heading but
+            cannot use the associated HTML element.
+          </p>
+          <div className="bd-example">
+            <p className="h1">h1. Bootstrap heading</p>
+            <p className="h2">h2. Bootstrap heading</p>
+            <p className="h3">h3. Bootstrap heading</p>
+            <p className="h4">h4. Bootstrap heading</p>
+            <p className="h5">h5. Bootstrap heading</p>
+            <p className="h6">h6. Bootstrap heading</p>
+          </div>
+        </CCardBody>
+      </CCard>
+      <CCard className="mb-4">
+        <div className="card-header">Display headings</div>
+        <div className="card-body">
+          <p>
+            Traditional heading elements are designed to work best in the meat of your page content.
+            When you need a heading to stand out, consider using a <strong>display heading</strong>
+            —a larger, slightly more opinionated heading style.
+          </p>
+          <div className="bd-example bd-example-type">
+            <table className="table">
+              <tbody>
+                <tr>
+                  <td>
+                    <span className="display-1">Display 1</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span className="display-2">Display 2</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span className="display-3">Display 3</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span className="display-4">Display 4</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </CCard>
+      <CCard className="mb-4">
+        <CCardHeader>Inline text elements</CCardHeader>
+        <CCardBody>
+          <p>
+            Traditional heading elements are designed to work best in the meat of your page content.
+            When you need a heading to stand out, consider using a <strong>display heading</strong>
+            —a larger, slightly more opinionated heading style.
+          </p>
+          <div className="bd-example">
+            <p>
+              You can use the mark tag to <mark>highlight</mark> text.
+            </p>
+            <p>
+              <del>This line of text is meant to be treated as deleted text.</del>
+            </p>
+            <p>
+              <s>This line of text is meant to be treated as no longer accurate.</s>
+            </p>
+            <p>
+              <ins>This line of text is meant to be treated as an addition to the document.</ins>
+            </p>
+            <p>
+              <u>This line of text will render as underlined</u>
+            </p>
+            <p>
+              <small>This line of text is meant to be treated as fine print.</small>
+            </p>
+            <p>
+              <strong>This line rendered as bold text.</strong>
+            </p>
+            <p>
+              <em>This line rendered as italicized text.</em>
+            </p>
+          </div>
+        </CCardBody>
+      </CCard>
+      <CCard className="mb-4">
+        <CCardHeader>Description list alignment</CCardHeader>
+        <CCardBody>
+          <p>
+            Align terms and descriptions horizontally by using our grid system’s predefined classes
+            (or semantic mixins). For longer terms, you can optionally add a{' '}
+            <code className="highlighter-rouge">.text-truncate</code> class to truncate the text
+            with an ellipsis.
+          </p>
+          <div className="bd-example">
+            <dl className="row">
+              <dt className="col-sm-3">Description lists</dt>
+              <dd className="col-sm-9">A description list is perfect for defining terms.</dd>
+
+              <dt className="col-sm-3">Euismod</dt>
+              <dd className="col-sm-9">
+                <p>
+                  Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+                </p>
+                <p>Donec id elit non mi porta gravida at eget metus.</p>
+              </dd>
+
+              <dt className="col-sm-3">Malesuada porta</dt>
+              <dd className="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+              <dt className="col-sm-3 text-truncate">Truncated term is truncated</dt>
+              <dd className="col-sm-9">
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                fermentum massa justo sit amet risus.
+              </dd>
+
+              <dt className="col-sm-3">Nesting</dt>
+              <dd className="col-sm-9">
+                <dl className="row">
+                  <dt className="col-sm-4">Nested definition list</dt>
+                  <dd className="col-sm-8">
+                    Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+          </div>
+        </CCardBody>
+      </CCard>
+    </>
+  )
+}
+
+export default Typography
+
+
+
+
+import React, { useState } from 'react';
+import {
+  CInputGroup,
+  CFormInput,
+  CButton,
+  CTable,
+  CTableHead,
+  CTableRow,
+  CTableHeaderCell,
+  CTableDataCell,
+  CTableBody,
+} from '@coreui/react';
+
+const initialData = [
+  // Your provided data
+  // ...
+];
+
+const Typography = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredData, setFilteredData] = useState(initialData);
+
+  const handleSearch = () => {
+    const newData = initialData.filter((item) =>
+      item.PlateNumb.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredData(newData);
+  };
+
+  return (
+    <>
+      <CInputGroup className="mb-3">
+        <CFormInput
+          placeholder="輸入公車車牌"
+          aria-label="Bus Plate Number"
+          aria-describedby="button-addon2"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <CButton
+          type="button"
+          color="secondary"
+          variant="outline"
+          id="button-addon2"
+          onClick={handleSearch}
+        >
+          搜尋
+        </CButton>
+      </CInputGroup>
+      <CTable>
+        <CTableHead>
+          <CTableRow>
+            <CTableHeaderCell scope="col">#</CTableHeaderCell>
+            <CTableHeaderCell scope="col">車牌號碼</CTableHeaderCell>
+            <CTableHeaderCell scope="col">位置經度</CTableHeaderCell>
+            <CTableHeaderCell scope="col">位置緯度</CTableHeaderCell>
+            <CTableHeaderCell scope="col">速度</CTableHeaderCell>
+          </CTableRow>
+        </CTableHead>
+        <CTableBody>
+          {filteredData.map((item, index) => (
+            <CTableRow key={index}>
+              <CTableHeaderCell scope="row">{index + 1}</CTableHeaderCell>
+              <CTableDataCell>{item.PlateNumb}</CTableDataCell>
+              <CTableDataCell>{item.BusPosition.PositionLon}</CTableDataCell>
+              <CTableDataCell>{item.BusPosition.PositionLat}</CTableDataCell>
+              <CTableDataCell>{item.Speed}</CTableDataCell>
+            </CTableRow>
+          ))}
+        </CTableBody>
+      </CTable>
+    </>
+  );
+};
+
+export default Typography;
+
+
+
+import React, { useState, useEffect } from 'react';
+import {
+  CInputGroup,
+  CFormInput,
+  CButton,
+  CTable,
+  CTableHead,
+  CTableRow,
+  CTableHeaderCell,
+  CTableDataCell,
+  CTableBody,
+} from '@coreui/react';
+
+const API = "http://localhost:3000"; // 將此處替換為實際的API URL
+
+const Typography = () => {
+  const [data, setData] = useState([]); // 保存從API獲取的所有數據
+  const [searchTerm, setSearchTerm] = useState(''); // 保存搜索關鍵詞
+  const [filteredData, setFilteredData] = useState([]); // 保存過濾後的數據
+
+  // 從API獲取數據並更新data狀態
+  const fetchData = async () => {
+    try {
+      const response = await fetch(API);
+      const jsonData = await response.json();
+      setData(jsonData.data);
+    } catch (error) {
+      console.error('獲取數據時出錯:', error);
+    }
+  };
+
+  // 在組件加載時調用fetchData函數
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  // 處理搜索操作並更新filteredData
+  const handleSearch = () => {
+    const newData = data.filter((item) =>
+      item.class.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredData(newData);
+  };
+
+  return (
+    <>
+      <CInputGroup className="mb-3">
+        <CFormInput
+          placeholder="輸入公車"
+          aria-label="收件人用戶名"
+          aria-describedby="button-addon2"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <CButton
+          type="button"
+          color="secondary"
+          variant="outline"
+          id="button-addon2"
+          onClick={handleSearch}
+        >
+          搜尋
+        </CButton>
+      </CInputGroup>
+      <CTable>
+        <CTableHead>
+          <CTableRow>
+            <CTableHeaderCell scope="col">#</CTableHeaderCell>
+            <CTableHeaderCell scope="col">班次</CTableHeaderCell>
+            <CTableHeaderCell scope="col">標題</CTableHeaderCell>
+            <CTableHeaderCell scope="col">標題</CTableHeaderCell>
+          </CTableRow>
+        </CTableHead>
+        <CTableBody>
+          {filteredData.map((item) => (
+            <CTableRow key={item.id}>
+              <CTableHeaderCell scope="row">{item.id}</CTableHeaderCell>
+              <CTableDataCell>{item.class}</CTableDataCell>
+              <CTableDataCell>{item.heading1}</CTableDataCell>
+              <CTableDataCell>{item.heading2}</CTableDataCell>
+            </CTableRow>
+          ))}
+        </CTableBody>
+      </CTable>
+    </>
+  );
+};
+
+export default Typography;
+
+
+
+db.json
+{
+
+    "buses":[
+      {
+        "PlateNumb": "KKA-2723",
+        "OperatorID": "41",
+        "OperatorNo": "0301",
+        "RouteUID": "THB9003",
+        "RouteID": "9003",
+        "RouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "SubRouteUID": "THB900301",
+        "SubRouteID": "900301",
+        "SubRouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "Direction": 0,
+        "BusPosition": {
+          "PositionLon": 121.273078333333,
+          "PositionLat": 25.0191983333333,
+          "GeoHash": "wsqnrds77"
+        },
+        "Speed": 92.0,
+        "Azimuth": 228.0,
+        "DutyStatus": 1,
+        "BusStatus": 0,
+        "MessageType": 1,
+        "GPSTime": "2023-08-15T23:33:15+08:00",
+        "SrcRecTime": "2023-08-15T23:33:15+08:00",
+        "SrcTransTime": "2023-08-15T23:33:15+08:00",
+        "UpdateTime": "2023-08-15T23:33:16+08:00"
+      },
+      {
+        "PlateNumb": "KKA-1505",
+        "OperatorID": "41",
+        "OperatorNo": "0301",
+        "RouteUID": "THB9003",
+        "RouteID": "9003",
+        "RouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "SubRouteUID": "THB900301",
+        "SubRouteID": "900301",
+        "SubRouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "Direction": 0,
+        "BusPosition": {
+          "PositionLon": 121.02793,
+          "PositionLat": 24.8755533333333,
+          "GeoHash": "wsqjd03ye"
+        },
+        "Speed": 5.0,
+        "Azimuth": 247.0,
+        "DutyStatus": 1,
+        "BusStatus": 0,
+        "MessageType": 1,
+        "GPSTime": "2023-08-15T23:33:02+08:00",
+        "SrcRecTime": "2023-08-15T23:33:02+08:00",
+        "SrcTransTime": "2023-08-15T23:33:02+08:00",
+        "UpdateTime": "2023-08-15T23:33:06+08:00"
+      },
+      {
+        "PlateNumb": "KKA-2789",
+        "OperatorID": "41",
+        "OperatorNo": "0301",
+        "RouteUID": "THB9003",
+        "RouteID": "9003",
+        "RouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "SubRouteUID": "THB900302",
+        "SubRouteID": "900302",
+        "SubRouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "Direction": 1,
+        "BusPosition": {
+          "PositionLon": 121.513648333333,
+          "PositionLat": 25.063275,
+          "GeoHash": "wsqqt4es1"
+        },
+        "Speed": 0.0,
+        "Azimuth": 181.0,
+        "DutyStatus": 1,
+        "BusStatus": 0,
+        "MessageType": 1,
+        "GPSTime": "2023-08-15T23:32:58+08:00",
+        "SrcRecTime": "2023-08-15T23:32:59+08:00",
+        "SrcTransTime": "2023-08-15T23:32:59+08:00",
+        "UpdateTime": "2023-08-15T23:33:01+08:00"
+      },
+      {
+        "PlateNumb": "KKA-9812",
+        "OperatorID": "41",
+        "OperatorNo": "0301",
+        "RouteUID": "THB9003",
+        "RouteID": "9003",
+        "RouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "SubRouteUID": "THB900302",
+        "SubRouteID": "900302",
+        "SubRouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "Direction": 1,
+        "BusPosition": {
+          "PositionLon": 121.516986666667,
+          "PositionLat": 25.0496216666667,
+          "GeoHash": "wsqqt0jux"
+        },
+        "Speed": 0.0,
+        "Azimuth": 0.0,
+        "DutyStatus": 1,
+        "BusStatus": 0,
+        "MessageType": 1,
+        "GPSTime": "2023-08-15T23:20:23+08:00",
+        "SrcRecTime": "2023-08-15T23:20:23+08:00",
+        "SrcTransTime": "2023-08-15T23:20:23+08:00",
+        "UpdateTime": "2023-08-15T23:20:26+08:00"
+      },
+      {
+        "PlateNumb": "319-U7",
+        "OperatorID": "13",
+        "OperatorNo": "1303",
+        "RouteUID": "THB9003",
+        "RouteID": "9003",
+        "RouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "SubRouteUID": "THB900301",
+        "SubRouteID": "900301",
+        "SubRouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "Direction": 0,
+        "BusPosition": {
+          "PositionLon": 120.974558333333,
+          "PositionLat": 24.801655,
+          "GeoHash": "wsqj0g4bp"
+        },
+        "Speed": 14.0,
+        "Azimuth": 267.0,
+        "DutyStatus": 0,
+        "BusStatus": 0,
+        "MessageType": 1,
+        "GPSTime": "2023-08-15T23:18:18+08:00",
+        "SrcRecTime": "2023-08-15T23:18:19+08:00",
+        "SrcTransTime": "2023-08-15T23:18:19+08:00",
+        "UpdateTime": "2023-08-15T23:18:21+08:00"
+      },
+      {
+        "PlateNumb": "329-U7",
+        "OperatorID": "13",
+        "OperatorNo": "1303",
+        "RouteUID": "THB9003",
+        "RouteID": "9003",
+        "RouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "SubRouteUID": "THB900301",
+        "SubRouteID": "900301",
+        "SubRouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "Direction": 0,
+        "BusPosition": {
+          "PositionLon": 120.974156666667,
+          "PositionLat": 24.8014733333333,
+          "GeoHash": "wsqj0ffxn"
+        },
+        "Speed": 29.0,
+        "Azimuth": 235.0,
+        "DutyStatus": 0,
+        "BusStatus": 0,
+        "MessageType": 1,
+        "GPSTime": "2023-08-15T23:03:20+08:00",
+        "SrcRecTime": "2023-08-15T23:03:20+08:00",
+        "SrcTransTime": "2023-08-15T23:03:20+08:00",
+        "UpdateTime": "2023-08-15T23:03:21+08:00"
+      },
+      {
+        "PlateNumb": "KKA-2795",
+        "OperatorID": "41",
+        "OperatorNo": "0301",
+        "RouteUID": "THB9003",
+        "RouteID": "9003",
+        "RouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "SubRouteUID": "THB900302",
+        "SubRouteID": "900302",
+        "SubRouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "Direction": 1,
+        "BusPosition": {
+          "PositionLon": 121.516673333333,
+          "PositionLat": 25.0495983333333,
+          "GeoHash": "wsqqt0jsr"
+        },
+        "Speed": 0.0,
+        "Azimuth": 0.0,
+        "DutyStatus": 1,
+        "BusStatus": 0,
+        "MessageType": 1,
+        "GPSTime": "2023-08-15T22:59:45+08:00",
+        "SrcRecTime": "2023-08-15T22:59:46+08:00",
+        "SrcTransTime": "2023-08-15T22:59:46+08:00",
+        "UpdateTime": "2023-08-15T22:59:51+08:00"
+      },
+      {
+        "PlateNumb": "330-U7",
+        "OperatorID": "13",
+        "OperatorNo": "1303",
+        "RouteUID": "THB9003",
+        "RouteID": "9003",
+        "RouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "SubRouteUID": "THB900301",
+        "SubRouteID": "900301",
+        "SubRouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "Direction": 0,
+        "BusPosition": {
+          "PositionLon": 120.974706666667,
+          "PositionLat": 24.8016483333333,
+          "GeoHash": "wsqj0g504"
+        },
+        "Speed": 18.0,
+        "Azimuth": 321.0,
+        "DutyStatus": 0,
+        "BusStatus": 0,
+        "MessageType": 1,
+        "GPSTime": "2023-08-15T22:53:11+08:00",
+        "SrcRecTime": "2023-08-15T22:53:12+08:00",
+        "SrcTransTime": "2023-08-15T22:53:12+08:00",
+        "UpdateTime": "2023-08-15T22:53:16+08:00"
+      },
+      {
+        "PlateNumb": "FAD-265",
+        "OperatorID": "13",
+        "OperatorNo": "1303",
+        "RouteUID": "THB9003",
+        "RouteID": "9003",
+        "RouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "SubRouteUID": "THB900301",
+        "SubRouteID": "900301",
+        "SubRouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "Direction": 0,
+        "BusPosition": {
+          "PositionLon": 120.974545,
+          "PositionLat": 24.80171,
+          "GeoHash": "wsqj0g4br"
+        },
+        "Speed": 12.0,
+        "Azimuth": 267.0,
+        "DutyStatus": 0,
+        "BusStatus": 0,
+        "MessageType": 1,
+        "GPSTime": "2023-08-15T22:26:34+08:00",
+        "SrcRecTime": "2023-08-15T22:26:35+08:00",
+        "SrcTransTime": "2023-08-15T22:26:35+08:00",
+        "UpdateTime": "2023-08-15T22:26:36+08:00"
+      },
+      {
+        "PlateNumb": "FAD-288",
+        "OperatorID": "13",
+        "OperatorNo": "1303",
+        "RouteUID": "THB9003",
+        "RouteID": "9003",
+        "RouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "SubRouteUID": "THB900301",
+        "SubRouteID": "900301",
+        "SubRouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "Direction": 0,
+        "BusPosition": {
+          "PositionLon": 120.974633333333,
+          "PositionLat": 24.8016983333333,
+          "GeoHash": "wsqj0g503"
+        },
+        "Speed": 12.0,
+        "Azimuth": 271.0,
+        "DutyStatus": 0,
+        "BusStatus": 0,
+        "MessageType": 1,
+        "GPSTime": "2023-08-15T22:13:21+08:00",
+        "SrcRecTime": "2023-08-15T22:13:22+08:00",
+        "SrcTransTime": "2023-08-15T22:13:22+08:00",
+        "UpdateTime": "2023-08-15T22:13:26+08:00"
+      },
+      {
+        "PlateNumb": "KKA-9815",
+        "OperatorID": "41",
+        "OperatorNo": "0301",
+        "RouteUID": "THB9003",
+        "RouteID": "9003",
+        "RouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "SubRouteUID": "THB900302",
+        "SubRouteID": "900302",
+        "SubRouteName": {
+          "Zh_tw": "9003",
+          "En": "9003"
+        },
+        "Direction": 1,
+        "BusPosition": {
+          "PositionLon": 121.517715,
+          "PositionLat": 25.0501616666667,
+          "GeoHash": "wsqqt0nrz"
+        },
+        "Speed": 0.0,
+        "Azimuth": 0.0,
+        "DutyStatus": 1,
+        "BusStatus": 0,
+        "MessageType": 1,
+        "GPSTime": "2023-08-15T21:44:23+08:00",
+        "SrcRecTime": "2023-08-15T21:44:24+08:00",
+        "SrcTransTime": "2023-08-15T21:44:24+08:00",
+        "UpdateTime": "2023-08-15T21:44:26+08:00"
+      }
+    ]
+  }
