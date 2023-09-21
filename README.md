@@ -32,4 +32,4 @@
 
 ## 屏幕截圖
 
-![應用程式截圖](highspeedtrain.png)
+![應用程式截圖](photo1.png)
