@@ -32,4 +32,4 @@
 
 ## 屏幕截圖
 
-![應用程式截圖](highspeedtrain.png)
+![應用程式截圖](/Users/darrenyou/workspace/react/exchange-rate/highspeedtrain.png)
