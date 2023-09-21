@@ -28,8 +28,10 @@
 
 - 前端：React
 - 狀態管理：useState 和 useEffect 
-- 外部 API：高鐵時刻表 API
+- 外部 API：TDX API
+- 使用者介面：CoreUI
 
-## 屏幕截圖
+
+## 畫面顯示
 
 ![應用程式截圖](photo1.png)
