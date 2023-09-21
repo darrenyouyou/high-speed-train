@@ -91,8 +91,9 @@ const Dashboard = () => {
   ]
 
   const progressGroupExample2 = [
-    { title: 'Male', icon: cilUser, value: 53 },
-    { title: 'Female', icon: cilUserFemale, value: 43 },
+    { title: '美州', value: 20 },
+    { title: '亞洲', value: 16 },
+    { title: '歐洲', value: 4 },
   ]
 
   const progressGroupExample3 = [
@@ -308,19 +309,6 @@ const Dashboard = () => {
             }}
           />
         </CCardBody>
-        <CCardFooter>
-          <CRow xs={{ cols: 1 }} md={{ cols: 5 }} className="text-center">
-            {progressExample.map((item, index) => (
-              <CCol className="mb-sm-2 mb-0" key={index}>
-                <div className="text-medium-emphasis">{item.title}</div>
-                <strong>
-                  {item.value} ({item.percent}%)
-                </strong>
-                <CProgress thin className="mt-2" color={item.color} value={item.percent} />
-              </CCol>
-            ))}
-          </CRow>
-        </CCardFooter>
       </CCard>
 
       <WidgetsBrand withCharts />
@@ -328,7 +316,7 @@ const Dashboard = () => {
       <CRow>
         <CCol xs>
           <CCard className="mb-4">
-            <CCardHeader>Traffic {' & '} Sales</CCardHeader>
+            <CCardHeader>各國匯率</CCardHeader>
             <CCardBody>
               <CRow>
                 <CCol xs={12} md={6} xl={6}>
@@ -341,7 +329,6 @@ const Dashboard = () => {
                       </CCol>
                     ))}
                   </CRow>
-
                   <hr className="mt-0" />
                   {progressGroupExample1.map((item, index) => (
                     <div className="progress-group mb-4" key={index}>
@@ -360,16 +347,16 @@ const Dashboard = () => {
                   <CRow>
                     <CCol sm={6}>
                       <div className="border-start border-start-4 border-start-warning py-1 px-3 mb-3">
-                        <div className="text-medium-emphasis small">Pageviews</div>
-                        <div className="fs-5 fw-semibold">78,623</div>
+                        <div className="text-medium-emphasis small">國家總數</div>
+                        <div className="fs-5 fw-semibold">25</div>
                       </div>
                     </CCol>
-                    <CCol sm={6}>
+                    {/* <CCol sm={6}>
                       <div className="border-start border-start-4 border-start-success py-1 px-3 mb-3">
                         <div className="text-medium-emphasis small">Organic</div>
                         <div className="fs-5 fw-semibold">49,123</div>
                       </div>
-                    </CCol>
+                    </CCol> */}
                   </CRow>
 
                   <hr className="mt-0" />
@@ -377,7 +364,6 @@ const Dashboard = () => {
                   {progressGroupExample2.map((item, index) => (
                     <div className="progress-group mb-4" key={index}>
                       <div className="progress-group-header">
-                        <CIcon className="me-2" icon={item.icon} size="lg" />
                         <span>{item.title}</span>
                         <span className="ms-auto fw-semibold">{item.value}%</span>
                       </div>
@@ -387,7 +373,7 @@ const Dashboard = () => {
                     </div>
                   ))}
 
-                  <div className="mb-5"></div>
+                  {/* <div className="mb-5"></div>
 
                   {progressGroupExample3.map((item, index) => (
                     <div className="progress-group" key={index}>
@@ -403,7 +389,7 @@ const Dashboard = () => {
                         <CProgress thin color="success" value={item.percent} />
                       </div>
                     </div>
-                  ))}
+                  ))} */}
                 </CCol>
               </CRow>
 

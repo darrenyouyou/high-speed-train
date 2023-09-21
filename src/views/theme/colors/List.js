@@ -11,16 +11,17 @@ import {
   CFormInput,
   CButton,
 } from '@coreui/react'
+
 const List = ({ listData }) => {
   return (
     <div>
-      {listData && listData.length > 0 ? (
+      {listData && (
         <CTable>
           <CTableHead>
             <CTableRow>
               <CTableHeaderCell scope="col">車次號碼</CTableHeaderCell>
-              <CTableHeaderCell scope="col">起始站</CTableHeaderCell>
-              <CTableHeaderCell scope="col">終點站</CTableHeaderCell>
+              <CTableHeaderCell scope="col">到站時間</CTableHeaderCell>
+              <CTableHeaderCell scope="col">抵達時間</CTableHeaderCell>
             </CTableRow>
           </CTableHead>
 
@@ -28,14 +29,12 @@ const List = ({ listData }) => {
             {listData.map((train) => (
               <CTableRow key={train.DailyTrainInfo.TrainNo}>
                 <CTableDataCell>{train.DailyTrainInfo.TrainNo}</CTableDataCell>
-                <CTableDataCell>{train.DailyTrainInfo.StartingStationName.Zh_tw}</CTableDataCell>
-                <CTableDataCell>{train.DailyTrainInfo.EndingStationName.Zh_tw}</CTableDataCell>
+                <CTableDataCell>{train.OriginStopTime.ArrivalTime}</CTableDataCell>
+                <CTableDataCell>{train.DestinationStopTime.ArrivalTime}</CTableDataCell>
               </CTableRow>
             ))}
           </CTableBody>
         </CTable>
-      ) : (
-        <p></p>
       )}
     </div>
   )

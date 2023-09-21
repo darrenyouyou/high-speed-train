@@ -50,15 +50,11 @@ const Colors = () => {
     }
   }, [token])
 
-  const handleSearch = (filteredTrains) => {
-    setFilteredData(filteredTrains)
-  }
-
+  console.log(data)
   return (
     <div>
-      <h2>API Data:</h2>
-      <Edit listData={data} onSearch={handleSearch} />
-      <List listData={filteredData} />
+      <h2>高鐵查詢:</h2>
+      <Edit listData={data} token={token} />
     </div>
   )
 }

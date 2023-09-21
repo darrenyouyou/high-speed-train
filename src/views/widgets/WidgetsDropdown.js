@@ -22,13 +22,10 @@ const WidgetsDropdown = () => {
           color="primary"
           value={
             <>
-              26K{' '}
-              <span className="fs-6 fw-normal">
-                (-12.4% <CIcon icon={cilArrowBottom} />)
-              </span>
+              USA <span className="fs-6 fw-normal"> </span>
             </>
           }
-          title="Users"
+          title="Exchange Rate"
           action={
             <CDropdown alignment="end">
               <CDropdownToggle color="transparent" caret={false} className="p-0">
